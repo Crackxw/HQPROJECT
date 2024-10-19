@@ -1,0 +1,187 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (0bac8614).
+//
+// d:\server\hqproject\authserver\debug\GD2sAAA.tlh
+//
+// C++ source equivalent of Win32 type library Debug/GD2sAAA.dll
+// compiler-generated file created 01/15/04 at 19:25:16 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace GD2sAAA {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("732b7ab8-6e53-4703-978f-d9118ece2da2"))
+/* dual interface */ _Authentication;
+struct /* coclass */ Authentication;
+struct __declspec(uuid("a272267d-adc4-4894-a385-c164042bfa71"))
+/* dual interface */ _Management;
+struct /* coclass */ Management;
+typedef struct _Management Management___v0;
+struct __declspec(uuid("bd0e3f6a-3af2-4edb-870f-7749c6fd2c69"))
+/* dual interface */ _Accounting;
+struct /* coclass */ Accounting;
+struct __declspec(uuid("9e4a09a2-9b39-4bb8-95d2-7c4cbf146109"))
+/* dual interface */ _Authorization;
+struct /* coclass */ Authorization;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_Authentication, __uuidof(_Authentication));
+_COM_SMARTPTR_TYPEDEF(_Management, __uuidof(_Management));
+_COM_SMARTPTR_TYPEDEF(_Accounting, __uuidof(_Accounting));
+_COM_SMARTPTR_TYPEDEF(_Authorization, __uuidof(_Authorization));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("732b7ab8-6e53-4703-978f-d9118ece2da2"))
+_Authentication : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short ServiceAuth (
+        _bstr_t strServiceAccount,
+        _bstr_t strServicePassword,
+        _bstr_t strSerialNumber,
+        _bstr_t strIPAddress,
+        _bstr_t strType,
+        VARIANT * strDescription );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ServiceAuth (
+        BSTR strServiceAccount,
+        BSTR strServicePassword,
+        BSTR strSerialNumber,
+        BSTR strIPAddress,
+        BSTR strType,
+        VARIANT * strDescription,
+        short * _arg7 ) = 0;
+};
+
+struct __declspec(uuid("b5f578aa-3bd9-4ea9-9517-a2e37f2496a2"))
+Authentication;
+    // [ default ] interface _Authentication
+
+struct __declspec(uuid("a272267d-adc4-4894-a385-c164042bfa71"))
+_Management : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short ServiceAllLogout (
+        _bstr_t strSerialNumber,
+        _bstr_t strLogoutTime );
+    short ChangeServiceFlagStatus (
+        _bstr_t strSerialNumber,
+        short intFlagNumber,
+        _bstr_t strFlagChangeTo );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ServiceAllLogout (
+        BSTR strSerialNumber,
+        BSTR strLogoutTime,
+        short * _arg3 ) = 0;
+    virtual HRESULT __stdcall raw_ChangeServiceFlagStatus (
+        BSTR strSerialNumber,
+        short intFlagNumber,
+        BSTR strFlagChangeTo,
+        short * _arg4 ) = 0;
+};
+
+struct __declspec(uuid("5fd95a13-5e67-430b-b90b-0b944e3c51c9"))
+Management;
+    // [ default ] interface _Management
+
+struct __declspec(uuid("bd0e3f6a-3af2-4edb-870f-7749c6fd2c69"))
+_Accounting : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short ServiceAccounting (
+        _bstr_t strServiceAccount,
+        _bstr_t strSerialNumber,
+        _bstr_t strType,
+        _bstr_t strLoginTime,
+        _bstr_t strLogoutTime,
+        _bstr_t strIPAddress,
+        VARIANT * strDescription );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ServiceAccounting (
+        BSTR strServiceAccount,
+        BSTR strSerialNumber,
+        BSTR strType,
+        BSTR strLoginTime,
+        BSTR strLogoutTime,
+        BSTR strIPAddress,
+        VARIANT * strDescription,
+        short * _arg8 ) = 0;
+};
+
+struct __declspec(uuid("dadc48b9-d027-4952-9316-b536997d9949"))
+Accounting;
+    // [ default ] interface _Accounting
+
+struct __declspec(uuid("9e4a09a2-9b39-4bb8-95d2-7c4cbf146109"))
+_Authorization : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short ServiceAuth (
+        _bstr_t strServiceAccount,
+        _bstr_t strSerialNumber,
+        _bstr_t strIPAddress,
+        _bstr_t strType,
+        VARIANT * strDescription );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ServiceAuth (
+        BSTR strServiceAccount,
+        BSTR strSerialNumber,
+        BSTR strIPAddress,
+        BSTR strType,
+        VARIANT * strDescription,
+        short * _arg6 ) = 0;
+};
+
+struct __declspec(uuid("9ac36e11-9352-44e1-a440-62d22de17424"))
+Authorization;
+    // [ default ] interface _Authorization
+
+//
+// Wrapper method implementations
+//
+
+#include "d:\server\hqproject\authserver\debug\GD2sAAA.tli"
+
+} // namespace GD2sAAA
+
+#pragma pack(pop)

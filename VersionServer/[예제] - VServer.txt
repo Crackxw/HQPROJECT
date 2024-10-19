@@ -1,0 +1,36 @@
+// ==> Comments
+// GSAutopatch에서 사용하기 위하여 버전서버에서 사용하는
+// VServer.txt 예제 파일.
+// FTP_ADDRESS1, FTP_ID1, FTP_PASSWORD1 => FTP 서버 1. 하나는 반드시 존재
+// FTP_ADDRESS2, FTP_ID2, FTP_PASSWORD2 => FTP 서버 2. 없어도 상관없다.
+// FTP 서버가 여러 개일 경우 하나를 무작위로 선택하여 거상 런처에 보내준다.
+
+// 패치 FTP 서버 주소
+FTP_ADDRESS1 = "220.85.18.225"
+
+// 패치 FTP 서버 ID
+FTP_ID1 = "anonymous"
+
+// 패치 FTP 서버 Password
+FTP_PASSWORD1 = "anonymous"
+
+// 프론트 서버 주소
+// 프론트 서버 주소 값에 "-1"로 설정되어 있다면 거상 클라이언트
+// 실행 플래그로 -IP, -NT, -ST 플래그는 포함시키지 않는다.
+// -IP:프론트서버주소 -NT:국가코드 -ST:서비스타입
+ADDRESS_FRONT_SERVER = "220.85.18.225"
+
+// 거상 오토패치 최신버전
+VERSION_AUTOPATCH = 10407210
+
+// 패치 FTP 서버 버전 정보 파일들이 있는 경로
+// delete.txt, gsversionlist.txt, apversionlist.txt,
+// 버전 정보파일들인(거상 클라이언트 및 런처용) 12400.txt, 10407210.txt, 등과 같은 파일들이 존재하는 디렉토리
+DIRECTORY_PATCH_INFO = "/GS_VersionInfo"
+
+// 거상 클라이언트 최신 버전
+VERSION_GERSANG = 12400
+
+// 패치 FTP 서버 거상 패치 파일 경로
+// 개별 압축된 파일들이 원래 거상 실제 설치 경로처럼 구성되어 있다.
+DIRECTORY_GERSANG_PATCH = "/GS_Gersang"	

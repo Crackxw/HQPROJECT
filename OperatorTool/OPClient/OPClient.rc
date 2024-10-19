@@ -1,0 +1,665 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OPClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\OPClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OPClient 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OPClient 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_OPCLIENT_DIALOG DIALOGEX 0, 0, 496, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,419,228,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PW,419,246,62,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Login",IDC_BUTTON_LOGIN,350,264,62,14
+    PUSHBUTTON      "Exit",IDOK,419,264,62,14
+    GROUPBOX        "계정 입력",IDC_STATIC_BOX,343,214,145,72
+    LTEXT           "ID",IDC_STATIC_LOGIN_ID,354,229,22,12,SS_CENTERIMAGE
+    LTEXT           "PassWord",IDC_STATIC_LOGIN_PW,354,247,39,12,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC_LOGIN_LINE,"Static",SS_BLACKFRAME,350,228,
+                    62,14
+    CONTROL         "",IDC_STATIC_PW_LINE,"Static",SS_BLACKFRAME,350,246,62,
+                    14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_DISABLED,7,290,462,1
+    CTEXT           "Bug0",IDC_STATIC,472,287,17,8,SS_CENTERIMAGE
+    CTEXT           "",IDC_SYSTEM_MSG,67,141,361,18,SS_CENTERIMAGE
+    PUSHBUTTON      "Item",IDC_BUTTON_ITEM,7,7,50,14
+    PUSHBUTTON      "Character",IDC_BUTTON_CHAR,65,7,50,14
+    PUSHBUTTON      "Text Edit",IDC_BUTTON_TEXT,123,7,50,14
+    GROUPBOX        "",IDC_STATIC_DLG,7,25,482,261,NOT WS_VISIBLE
+    PUSHBUTTON      "Exit",IDC_BUTTON_QUIT,181,7,50,14
+END
+
+IDD_DIALOG_TEXT DIALOG DISCARDABLE  0, 0, 475, 269
+STYLE WS_POPUP
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Save",IDOK,425,84,50,14
+    LISTBOX         IDC_LIST_DESC,0,0,420,260,WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Text",IDC_BUTTON_TEXT,425,0,50,14
+    PUSHBUTTON      "Quest",IDC_BUTTON_QUEST,425,21,50,14
+    PUSHBUTTON      "Help",IDC_BUTTON_HELP,425,42,50,14
+    PUSHBUTTON      "Mini Game",IDC_BUTTON_MINI,425,63,50,14
+    EDITTEXT        IDC_EDIT,426,223,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,425,105,50,14
+END
+
+IDD_DIALOG_CHAR DIALOG DISCARDABLE  0, 0, 481, 261
+STYLE WS_POPUP
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,423,208,50,15
+    GROUPBOX        "",IDC_CHAR_VIEW,0,0,210,120,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_ITEM_VIEW,215,0,86,88,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_ITEM_VIEW2,305,0,86,88,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_ITEM_VIEW3,395,0,86,88,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_ITEMLIST1,215,91,86,334,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ITEMLIST2,305,91,86,334,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ITEMLIST3,394,91,86,334,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ITEMPER1,215,107,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ITEMPER2,304,107,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ITEMPER3,393,107,86,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,0,122,210,38
+    EDITTEXT        IDC_EDIT_STR,22,129,46,12,ES_AUTOHSCROLL
+    CTEXT           "STR",IDC_STATIC,5,131,14,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_DEX,22,144,46,12,ES_AUTOHSCROLL
+    CTEXT           "DEX",IDC_STATIC,5,146,14,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VIT,92,129,46,12,ES_AUTOHSCROLL
+    CTEXT           "VIT",IDC_STATIC,75,131,12,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_HP,158,129,46,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "HP",IDC_STATIC,143,131,10,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_INT,92,144,46,12,ES_AUTOHSCROLL
+    CTEXT           "INT",IDC_STATIC,75,146,12,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MP,158,145,46,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "MP",IDC_STATIC,143,147,10,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_DESC,220,181,254,14,ES_AUTOHSCROLL
+    LTEXT           "Character Description",IDC_STATIC,225,166,70,8
+    GROUPBOX        "",IDC_STATIC,0,160,210,68
+    LTEXT           "Speed",IDC_STATIC,4,199,21,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPEED,27,197,54,12,ES_AUTOHSCROLL
+    LTEXT           "AC",IDC_STATIC,4,169,21,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPEED2,27,167,54,12,ES_AUTOHSCROLL
+    LTEXT           "Cost",IDC_STATIC,4,184,21,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_COST,27,182,54,12,ES_AUTOHSCROLL
+    LTEXT           "Lift",IDC_STATIC,4,214,21,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPEED4,27,212,54,12,ES_AUTOHSCROLL
+    CTEXT           "DamageResist",IDC_STATIC,91,168,46,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_DR,149,167,54,12,ES_AUTOHSCROLL
+    CTEXT           "MagicResist",IDC_STATIC,91,183,38,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MR,149,182,54,12,ES_AUTOHSCROLL
+    LTEXT           "EquipMinDamage",IDC_STATIC,91,198,55,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MIND,149,197,54,12,ES_AUTOHSCROLL
+    LTEXT           "EquipMaxDamage",IDC_STATIC,91,213,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MAXD,149,212,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,365,208,50,15
+    LTEXT           "Character Names",IDC_STATIC,224,131,56,8,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,220,129,66,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,220,164,80,12
+    COMBOBOX        IDC_COMBO_CHAR_NAME,220,145,254,198,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,215,122,266,106
+    PUSHBUTTON      "Modify",IDC_BUTTON_MODIFY,307,208,50,15
+END
+
+IDD_DIALOG_ITEM DIALOG DISCARDABLE  0, 0, 481, 259
+STYLE WS_POPUP
+FONT 8, "Tahoma"
+BEGIN
+    GROUPBOX        "",IDC_ITEM_VIEW,0,0,75,82,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO1,79,3,99,256,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ID,79,18,99,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_IMAGEL_FONT,249,91,40,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_IMAGES_FONT,249,110,40,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_IMAGEL,187,91,59,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_IMAGES,187,108,59,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GROUP,369,91,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Image Location(L)",IDC_STATIC,295,92,58,8
+    GROUPBOX        "",IDC_STATIC,182,82,177,95
+    EDITTEXT        IDC_EDIT_HP,3,90,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MP,3,103,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STR,3,118,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEX,3,132,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INT,3,146,40,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIT,3,159,40,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "HP",IDC_STATIC,49,93,19,8,SS_CENTERIMAGE
+    LTEXT           "MP",IDC_STATIC,49,106,19,8,SS_CENTERIMAGE
+    LTEXT           "STR",IDC_STATIC,49,119,19,8,SS_CENTERIMAGE
+    LTEXT           "DEX",IDC_STATIC,49,132,19,8,SS_CENTERIMAGE
+    LTEXT           "INT",IDC_STATIC,49,146,19,8,SS_CENTERIMAGE
+    LTEXT           "VIT",IDC_STATIC,49,159,19,8,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,0,82,75,95
+    EDITTEXT        IDC_EDIT_AC,82,89,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_DR,82,117,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_MR,82,131,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_SOUND,82,145,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Attack",IDC_STATIC,125,91,22,8
+    LTEXT           "Damage Regist",IDC_STATIC,125,119,49,8
+    LTEXT           "Magic Regist",IDC_STATIC,125,133,41,8
+    LTEXT           "Sound",IDC_STATIC,125,147,21,8
+    LTEXT           "Health",IDC_STATIC,125,161,22,8
+    EDITTEXT        IDC_EDIT_HEALTH,82,159,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,78,82,101,95
+    COMBOBOX        IDC_COMBO_ATT,369,107,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_KIND,0,54,106,200,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_VSCROLL
+    GROUPBOX        "",IDC_STATIC,363,82,118,95
+    LTEXT           "Image Location(S)",IDC_STATIC,295,109,59,8
+    COMBOBOX        IDC_COMBO_UNIT,369,139,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Weight",IDC_STATIC,295,126,24,8
+    LTEXT           "Min Damage",IDC_STATIC,127,188,40,8
+    LTEXT           "Max Damage",IDC_STATIC,127,201,42,8
+    LTEXT           "Attack Range",IDC_STATIC,127,214,44,8
+    COMBOBOX        IDC_COMBO_ATTACK_TYPE,369,155,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "용병 전투력 상향",IDC_STATIC,295,143,61,8
+    LTEXT           "용병 방어력 상향",IDC_STATIC,295,160,61,8
+    EDITTEXT        IDC_EDIT_MAXQUANTITY,187,125,102,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ATTUP,187,142,102,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_DEFUP,187,159,102,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,0,177,179,81
+    EDITTEXT        IDC_EDIT_MINDAMAGE,6,185,112,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MAXDAMAGE,6,199,112,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MAXDAMAGE2,6,212,112,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_REQ_LV,6,225,112,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Req Lv.",IDC_STATIC,127,227,26,8
+    GROUPBOX        "",IDC_STATIC,182,177,299,81
+    COMBOBOX        IDC_COMBO_MAGIC,369,123,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MAGIC_ATTACK,345,187,81,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Magic Attack",IDC_STATIC,432,189,42,8
+    LTEXT           "Description",IDC_STATIC,188,205,36,8
+    EDITTEXT        IDC_EDIT_DESC,188,215,288,12,ES_AUTOHSCROLL
+    LTEXT           "Magic Description",IDC_STATIC,188,232,56,8
+    EDITTEXT        IDC_EDIT_DESC2,188,242,288,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,182,0,299,82
+    COMBOBOX        IDC_COMBO_ELEMENT01,186,8,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ELEMENT02,186,22,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ELEMENT03,186,36,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ELEMENT04,186,50,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ELEMENT05,186,64,106,200,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ELEMENT1,297,8,50,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_ELEMENT2,297,22,50,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ELEMENT3,297,36,50,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ELEMENT4,297,50,50,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ELEMENT5,297,64,50,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_TOOL1,360,8,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TOOL2,360,26,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TOOL3,360,44,106,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WORK,360,62,76,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVEITEM,130,33,48,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,79,33,48,14
+    PUSHBUTTON      "Insert",IDC_BUTTON_INSERT,79,50,48,14
+    EDITTEXT        IDC_EDIT_DEFENCE,82,103,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Defense",IDC_STATIC,125,105,28,8
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,79,67,99,14
+    EDITTEXT        IDC_EDIT_DRAWID,6,239,112,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Draw ID",IDC_STATIC,127,240,27,8
+    LTEXT           "작업량",IDC_STATIC,438,64,25,8
+    PUSHBUTTON      "Modify",IDC_BUTTON_INSERT_OK,130,50,48,14
+    EDITTEXT        IDC_EDIT_MODIFY,6,26,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SOURCE,188,187,81,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Source",IDC_STATIC,277,189,23,8
+END
+
+IDD_DIALOG_MODIFY DIALOG DISCARDABLE  0, 0, 498, 111
+STYLE WS_POPUP
+FONT 8, "Tahoma"
+BEGIN
+    LISTBOX         IDC_LIST1,7,7,485,97,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "OPClient MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "OPClient\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "OPClient.EXE\0"
+            VALUE "ProductName", "OPClient 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OPCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_DIALOG_MODIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_ITEM DLGINIT
+BEGIN
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3130, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3230, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3330, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3430, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3530, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3630, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3730, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3830, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3930, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3031, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGEL, 0x403, 13, 0
+0x694c, 0x6574, 0x306d, 0x3131, 0x732e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3130, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3230, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3330, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3430, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3530, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3630, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3730, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3830, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3930, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_IMAGES, 0x403, 13, 0
+0x4953, 0x6574, 0x306d, 0x3031, 0x532e, 0x7270, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xabb9, 0xe2b1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 9, 0
+0xc7be, 0xbcbc, 0xe7bb, 0xaeb8, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xf8b0, 0xb8b1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 7, 0
+0xd4b8, 0xc2b4, 0xc5b0, "\000" 
+    IDC_COMBO_GROUP, 0x403, 19, 0
+0xc6be, 0xccc0, 0xdbc5, 0xc120, 0xc0a6, 0xbddb, 0x20c3, 0xf8bf, 0xe1b7, 
+"\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xc7c0, 0xf9b7, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xa9b0, 0xcabf, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xbfb5, 0xb0b9, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xceba, 0xf7c3, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xa7ba, 0xaec6, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xddb9, 0xf6c1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 7, 0
+0xcfc7, 0xccc0, 0xd9b9, "\000" 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xe5c0, 0xa9b0, "\000" 
+    IDC_COMBO_GROUP, 0x403, 16, 0
+0xecbb, 0xc6be, 0xaab3, 0xc2b4, 0xbe20, 0xc0c6, 0xc5cc, 0x00db, 
+    IDC_COMBO_GROUP, 0x403, 5, 0
+0xe5c0, 0xceba, "\000" 
+    IDC_COMBO_GROUP, 0x403, 11, 0
+0xbabd, 0xddc5, 0xcac3, 0xe2b1, 0xadc8, "\000" 
+    IDC_COMBO_GROUP, 0x403, 11, 0
+0xdcb4, 0xbab1, 0xc7c0, 0xc5b0, 0xefbf, "\000" 
+    IDC_COMBO_GROUP, 0x403, 9, 0
+0xd4b1, 0xadc8, 0xb8ba, 0xfcc0, "\000" 
+    IDC_COMBO_GROUP, 0x403, 11, 0
+0xb9b1, 0xfbc0, 0xd9b9, 0xd9b2, 0xe2b1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 13, 0
+0xc5bd, 0xebbf, 0xb5b5, 0xc3bf, 0xaeb8, 0xe2b1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 9, 0
+0xd5bc, 0xdac0, 0xb4ba, 0xfdb9, "\000" 
+    IDC_COMBO_GROUP, 0x403, 7, 0
+0xe7b4, 0xaab3, 0xcdb1, "\000" 
+    IDC_COMBO_GROUP, 0x403, 13, 0
+0xf0b8, 0xe7b5, 0xebbf, 0xb4ba, 0xfbc0, 0xebbf, "\000" 
+    IDC_COMBO_GROUP, 0x403, 8, 0
+0xb725, 0xc0ce, 0xbffb, 0x00eb, 
+    IDC_COMBO_ATT, 0x403, 11, 0
+0xf0b8, 0xceb5, 0xd2ba, 0xa1b0, 0xc9b4, "\000" 
+    IDC_COMBO_ATT, 0x403, 9, 0
+0xf8c2, 0xebbf, 0xa1b0, 0xc9b4, "\000" 
+    IDC_COMBO_ATT, 0x403, 9, 0
+0xe7bb, 0xebbf, 0xa1b0, 0xc9b4, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xabb9, 0xe2b1, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xa9b0, 0xcabf, "\000" 
+    IDC_COMBO_KIND, 0x403, 9, 0
+0xc7be, 0xbcbc, 0xe7bb, 0xaeb8, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xbfb5, 0xb0b9, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xc7c0, 0xb9ba, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xe7c0, 0xe1b7, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xbdc0, 0xc4bd, "\000" 
+    IDC_COMBO_KIND, 0x403, 3, 0
+0xfabc, "\000" 
+    IDC_COMBO_KIND, 0x403, 7, 0
+0xc7c0, 0xe0be, 0xb0c7, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xf8b0, 0xb8b1, "\000" 
+    IDC_COMBO_KIND, 0x403, 5, 0
+0xabb9, 0xaabf, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 5, 0
+0xf8be, 0xbdc0, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xcfc0, 0xddb0, 0xcac7, 0xecbb, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xf6c1, 0xf8c1, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xbac0, 0xc5bd, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xedc8, 0xf6bc, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 11, 0
+0xb8b8, 0xf9bf, 0xb5b5, 0xa2b3, 0xe3c3, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xf8c6, 0xdab7, 0xddb0, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xe2b1, 0xf8b0, 0xc5bd, 0xf7c6, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xd2ba, 0xadc8, 0xecbb, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 11, 0
+0xfbbd, 0xe2b1, 0xeec2, 0xa3b8, 0xe2b1, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xf8b9, 0xb3b0, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xe2b1, 0xf8b0, 0xc5bd, 0xf7c6, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xf7c6, 0xdab9, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xb3c7, 0xe9b9, 0xfabc, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 11, 0
+0xb6b8, 0xfdb9, 0xd2ba, 0xadc8, 0xecbb, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xacbf, 0xdfb9, 0xf7c6, 0xbac5, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 5, 0
+0xe5c0, 0xb3c7, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xd6bd, 0xcbb0, 0xadb3, 0xabb9, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 9, 0
+0xe5c0, 0xa2c3, 0xd2bc, 0xafc8, "\000" 
+    IDC_COMBO_ATTACK_TYPE, 0x403, 7, 0
+0xf9ba, 0xaebc, 0xfabc, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 16, 0
+0xabb9, 0xe2b1, 0xe7bb, 0xebbf, 0xba20, 0xb0d2, 0xb4a1, 0x00c9, 
+    IDC_COMBO_MAGIC, 0x403, 19, 0
+0xf0b8, 0xe7b5, 0xb920, 0xb1ab, 0x20e2, 0xe7bb, 0xebbf, 0xa1b0, 0xc9b4, 
+"\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xd1c3, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0x6144, 0x7472, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xcbb0, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xa2c3, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xb5b5, 0xa2b3, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xb0c8, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xceba, 0xa4c3, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0x7263, 0x7761, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xf1b8, 0xb9c5, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 7, 0
+0xd2bd, 0xfdc0, 0xefb0, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xb4b3, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xafc2, 0xb9b5, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xb0bf, 0xd6c1, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xf8be, 0xbdc0, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xebb4, 0xf7c6, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xd6bd, 0xcbb0, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 3, 0
+0xc0ba, "\000" 
+    IDC_COMBO_MAGIC, 0x403, 5, 0
+0xb8b1, 0xbdbd, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "OPClient 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\OPClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

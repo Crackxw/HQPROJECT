@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CrashMonitorClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP143.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/CrashMonitorClient.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Server\HQProject\CrashMonitorClient\CrashClientFormView.cpp"
+"D:\Server\HQProject\CrashMonitorClient\CrashTopFormView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP143.tmp" 
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP144.tmp" with contents
+[
+ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CrashMonitorClient.pdb" /debug /machine:I386 /out:"Debug/CrashMonitorClient.exe" /pdbtype:sept 
+.\Debug\ConnectDlg.obj
+.\Debug\CrashClientFormView.obj
+.\Debug\CrashInfo.obj
+.\Debug\CrashMonitorClient.obj
+.\Debug\CrashMonitorClientDoc.obj
+.\Debug\CrashMonitorClientView.obj
+.\Debug\CrashTopFormView.obj
+.\Debug\MainFrm.obj
+.\Debug\StatisticsFormView.obj
+.\Debug\StdAfx.obj
+.\Debug\AW_CMultiViewSplitter.obj
+.\Debug\GridCtrl.obj
+.\Debug\GridDropTarget.obj
+.\Debug\InPlaceEdit.obj
+.\Debug\TitleTip.obj
+.\Debug\JXAcceptSocketList.obj
+.\Debug\JXCommon.obj
+.\Debug\JXConnectSocket.obj
+.\Debug\JXConnectSocketMgr.obj
+.\Debug\JXGateSocket.obj
+.\Debug\JXList.obj
+.\Debug\JXPacket.obj
+.\Debug\JXPacketList.obj
+.\Debug\JXPacketQueue.obj
+.\Debug\JXSocket.obj
+.\Debug\JXSocketMgr.obj
+.\Debug\JXWorkManager.obj
+.\Debug\CrashMonitorClient.res
+]
+Creating command line "link.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP144.tmp"
+<h3>Output Window</h3>
+Compiling...
+CrashClientFormView.cpp
+CrashTopFormView.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP145.tmp" with contents
+[
+/nologo /o"Debug/CrashMonitorClient.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ConnectDlg.sbr
+.\Debug\CrashClientFormView.sbr
+.\Debug\CrashInfo.sbr
+.\Debug\CrashMonitorClient.sbr
+.\Debug\CrashMonitorClientDoc.sbr
+.\Debug\CrashMonitorClientView.sbr
+.\Debug\CrashTopFormView.sbr
+.\Debug\MainFrm.sbr
+.\Debug\StatisticsFormView.sbr
+.\Debug\AW_CMultiViewSplitter.sbr
+.\Debug\GridCtrl.sbr
+.\Debug\GridDropTarget.sbr
+.\Debug\InPlaceEdit.sbr
+.\Debug\TitleTip.sbr
+.\Debug\JXAcceptSocketList.sbr
+.\Debug\JXCommon.sbr
+.\Debug\JXConnectSocket.sbr
+.\Debug\JXConnectSocketMgr.sbr
+.\Debug\JXGateSocket.sbr
+.\Debug\JXList.sbr
+.\Debug\JXPacket.sbr
+.\Debug\JXPacketList.sbr
+.\Debug\JXPacketQueue.sbr
+.\Debug\JXSocket.sbr
+.\Debug\JXSocketMgr.sbr
+.\Debug\JXWorkManager.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP145.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CrashMonitorClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

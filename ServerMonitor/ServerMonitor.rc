@@ -1,0 +1,341 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ServerMonitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ServerMonitor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ServerMonitor 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ServerMonitor 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SERVERMONITOR_DIALOG DIALOGEX 0, 0, 507, 481
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerMonitor"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_SERVERLISTCONTROL2,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,5,75,373,198
+    CONTROL         "List1",IDC_SERVERLISTCONTROL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_OWNERDRAWFIXED | WS_BORDER | 
+                    WS_TABSTOP,5,75,373,198
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,2,55,380,230
+    EDITTEXT        IDC_CONSOLE_EDIT,6,413,375,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SERVERINFO_EDIT,390,69,109,212,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    CONTROL         "",IDC_RICHEDIT1,"RichEdit20A",WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP | 0x18c4,6,301,375,97
+    PUSHBUTTON      "Connect",IDC_CONNECTBUTTON,390,357,52,18
+    PUSHBUTTON      "File transfer",IDC_FILETRANSFERBUTTON,446,357,52,18
+    PUSHBUTTON      "Exit",IDC_EXITBUTTON,445,404,53,18
+    PUSHBUTTON      "Server On",IDC_SERVERONBUTTON,390,381,52,18
+    PUSHBUTTON      "Server Off",IDC_SERVEROFFBUTTON,446,381,52,18
+    LTEXT           "Current connected user : 0",IDC_MAXUSERNUM,121,8,194,14,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_IPCOMBO,390,7,108,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Alarm",IDC_SOUNDCHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,21,34,12
+    CTEXT           "IP :",IDC_STATIC,367,7,20,13,SS_CENTERIMAGE
+    CONTROL         "Auto Notice",IDC_AUTONOTICE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,38,54,11
+    EDITTEXT        IDC_AUTONOTICECONTENT,65,37,319,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERVALEDIT,440,41,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Notice Interval",IDC_STATIC,445,24,48,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Send ",IDC_NOTICESENDBUTTON2,390,29,42,32
+    LTEXT           "0/0 Bytes",IDC_FILETRANSFERBYTESTATIC,391,323,104,24
+    LTEXT           "File Name :",IDC_FILETRANSFRERNAMESTATIC,390,304,106,13
+    PUSHBUTTON      "Kick All",IDC_KICKBUTTON,389,405,53,18
+    EDITTEXT        IDC_KICKTIMER,448,433,49,16,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Kick Timer",IDC_STATIC,392,433,44,16
+END
+
+IDD_SELECTDIRECTORY DIALOG DISCARDABLE  0, 0, 199, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Select Folder"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_COMBO1,13,33,173,12,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Enter the folder to receive file.\nIf you leave the box empty  sended file will be saved in folder where monitoring server  is installed.",
+                    IDC_STATIC,13,66,172,29
+END
+
+IDD_LOGINDIALOG DIALOG DISCARDABLE  0, 0, 179, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Server Monitor"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,70,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,69,50,14
+    EDITTEXT        IDC_EDITID,75,20,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPASSWORD,75,40,91,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CTEXT           "ID",IDC_STATIC,20,20,46,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Password",IDC_STATIC,20,40,46,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "Login",IDC_STATIC,5,5,170,60
+END
+
+IDD_CONNECTDIALOG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,70,69,50,14
+END
+
+IDD_IPDIALOG DIALOG DISCARDABLE  0, 0, 187, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter monitor server address"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_COMBO1,25,20,135,40,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ServerMonitor MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ServerMonitor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ServerMonitor.EXE\0"
+            VALUE "ProductName", "ServerMonitor 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERVERMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 504
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 474
+    END
+
+    IDD_SELECTDIRECTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_LOGINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CONNECTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_IPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUPMENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "더미메뉴",                    65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "ServerMonitor 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+    IDS_STRING104           "한글이다"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\ServerMonitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

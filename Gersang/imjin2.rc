@@ -1,0 +1,303 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECTTERRAIN DIALOG DISCARDABLE  0, 0, 312, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stage Setting"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,210,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,210,50,14
+    GROUPBOX        "Terrain",IDC_STATIC,5,5,75,38,WS_GROUP
+    CONTROL         "Level 0",IDC_LEVEL0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,90,15,40,10
+    CONTROL         "Level 1",IDC_LEVEL1,"Button",BS_AUTORADIOBUTTON,90,25,
+                    40,10
+    CONTROL         "Level 2",IDC_LEVEL2,"Button",BS_AUTORADIOBUTTON,90,35,
+                    40,10
+    CONTROL         "Level 3",IDC_LEVEL3,"Button",BS_AUTORADIOBUTTON,90,45,
+                    40,10
+    CONTROL         "Level 4",IDC_LEVEL4,"Button",BS_AUTORADIOBUTTON,90,55,
+                    40,10
+    GROUPBOX        "Level",IDC_STATIC,85,5,50,67
+    CONTROL         "Normal",IDC_TILE_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,145,15,40,10
+    GROUPBOX        "Tile",IDC_STATIC,140,5,52,50
+    CONTROL         "Green",IDC_TILE_GREEN,"Button",BS_AUTORADIOBUTTON,145,
+                    25,36,10
+    CONTROL         "Red",IDC_TILE_RED,"Button",BS_AUTORADIOBUTTON,145,35,29,
+                    10
+    CONTROL         "Crop Area",IDC_TILE_CROPAREA,"Button",
+                    BS_AUTORADIOBUTTON,145,45,48,10
+    CONTROL         "New Map",IDC_NEWMAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,13,46,10
+    EDITTEXT        IDC_MAP_XSIZE,272,22,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_YSIZE,271,39,30,14,ES_AUTOHSCROLL
+    LTEXT           "width",IDC_STATIC,250,22,18,8
+    LTEXT           "height",IDC_STATIC,250,37,21,8
+    GROUPBOX        "Map",IDC_STATIC,248,7,60,50
+    COMBOBOX        IDC_TERRAIN,10,20,48,158,CBS_DROPDOWN | 
+                    CBS_DISABLENOSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",IDC_UNIT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,47,74,115
+    COMBOBOX        IDC_PLAYERNUMBER,90,100,38,105,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Player",IDC_STATIC,85,90,170,115
+    COMBOBOX        IDC_PLAYER_COUNTRY,90,126,40,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Country",IDC_STATIC,90,115,26,8
+    COMBOBOX        IDC_PLAYER_HOST,90,150,40,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Host",IDC_STATIC,90,140,16,8
+    CONTROL         "Player 1",IDC_PLAYER1,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,107,43,10
+    CONTROL         "Player 2",IDC_PLAYER2,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,117,43,10
+    CONTROL         "Player 3",IDC_PLAYER3,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,127,43,10
+    CONTROL         "Player 4",IDC_PLAYER4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,137,43,10
+    CONTROL         "Player 5",IDC_PLAYER5,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,147,43,10
+    CONTROL         "Player 6",IDC_PLAYER6,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,157,43,10
+    CONTROL         "Player 7",IDC_PLAYER7,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,167,43,10
+    CONTROL         "Player 8",IDC_PLAYER8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,205,177,43,10
+    GROUPBOX        "Ally",IDC_STATIC,200,97,50,95
+    LTEXT           "Group",IDC_STATIC,90,165,21,8
+    COMBOBOX        IDC_PLAYER_GROUP,90,175,40,80,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_UNIT_NUMBER,20,165,20,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_MAX_UNIT_NUMBER,20,185,20,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Unit",IDC_STATIC,5,165,14,8
+    LTEXT           "Max ",IDC_STATIC,5,185,17,8
+    CONTROL         "In Game",IDC_INGAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,45,165,43,10
+    EDITTEXT        IDC_CROP,140,125,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Crop",IDC_STATIC,140,115,16,8
+    LTEXT           "Tree",IDC_STATIC,140,140,16,8
+    EDITTEXT        IDC_TREE,140,150,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_RUIN,145,70,55,105,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Ruin",IDC_TEXT,140,55,65,40
+    GROUPBOX        "Map Type",IDC_STATIC,253,55,55,40
+    COMBOBOX        IDC_MAPTYPE,260,67,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Tree",IDC_STATIC,197,7,49,45
+    COMBOBOX        IDC_TREE_SELECT,199,19,45,72,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_ON_MOVE_MAP DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "이동"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,75,50,14
+    CTEXT           "이동 할 좌표",IDC_STATIC,38,16,113,8
+    LTEXT           "X : ",IDC_STATIC,18,36,12,8
+    LTEXT           "Y : ",IDC_STATIC,18,54,12,8
+    EDITTEXT        IDC_ON_ME_MOVE_X,39,32,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ON_ME_MOVE_Y,39,51,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_MSGBOX_EDITTYPE DIALOG DISCARDABLE  0, 0, 187, 59
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "거상 디버그용 다얄로그"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDE_RESULT,7,22,173,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "*^-^* 오케바지 ^-_-^",IDB_OK,7,38,173,14
+    CTEXT           "Static",IDS_MESSAGE,7,7,173,11,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SELECTTERRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_ON_MOVE_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_MSGBOX_EDITTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,3,8
+ PRODUCTVERSION 1,0,3,8
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "JOYON Entertainment\0"
+            VALUE "FileDescription", "Gersang\0"
+            VALUE "FileVersion", "3000\0"
+            VALUE "InternalName", "Gersang\0"
+            VALUE "LegalCopyright", "Copyright ⓒ 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gersang.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Gersang\0"
+            VALUE "ProductVersion", "3000\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SELECTTERRAIN DLGINIT
+BEGIN
+    IDC_TERRAIN, 0x403, 2, 0
+0x0020, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON    DISCARDABLE     "plus.ico"
+IDI_ICON3               ICON    DISCARDABLE     "icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_MEMORY_NOT_ENOUGH "우왁~ 망했다...T^T)"
+    IDS_ERR_CREATE_STANDARD_NTN "표준재생"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

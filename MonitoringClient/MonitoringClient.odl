@@ -1,0 +1,68 @@
+// MonitoringClient.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (MonitoringClient.tlb) that will become a resource in
+// MonitoringClient.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(0D71A7CD-335B-42DC-B51A-D81F580DE550), version(1.0),
+  helpfile("MonitoringClient.hlp"),
+  helpstring("MonitoringClient ActiveX Control module"),
+  control ]
+library MONITORINGCLIENTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CMonitoringClientCtrl
+
+	[ uuid(51EACFB3-49FC-4A17-9ECF-538DD62D3DD6),
+	  helpstring("Dispatch interface for MonitoringClient Control"), hidden ]
+	dispinterface _DMonitoringClient
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CMonitoringClientCtrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CMonitoringClientCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CMonitoringClientCtrl
+
+	[ uuid(E2029650-E928-4814-A497-AE5F0CF39CC1),
+	  helpstring("Event interface for MonitoringClient Control") ]
+	dispinterface _DMonitoringClientEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CMonitoringClientCtrl)
+			[id(1)] void Exiting();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CMonitoringClientCtrl
+
+	[ uuid(2A0563A6-6D8E-4D2D-82E2-25F3BB0DFF2E),
+	  helpstring("MonitoringClient Control"), control ]
+	coclass MonitoringClient
+	{
+		[default] dispinterface _DMonitoringClient;
+		[default, source] dispinterface _DMonitoringClientEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

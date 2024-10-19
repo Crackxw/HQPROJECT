@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by OPClient.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_OPCLIENT_DIALOG             102
+#define IDP_SOCKETS_INIT_FAILED         103
+#define IDR_MAINFRAME                   128
+#define IDD_DIALOG_TEXT                 129
+#define IDD_DIALOG_CHAR                 131
+#define IDD_DIALOG_ITEM                 132
+#define IDD_DIALOG_MODIFY               133
+#define IDC_EDIT_ID                     1001
+#define IDC_EDIT_PW                     1002
+#define IDC_BUTTON_LOGIN                1003
+#define IDC_SYSTEM_MSG                  1004
+#define IDC_BUTTON_ITEM                 1005
+#define IDC_BUTTON_CHAR                 1006
+#define IDC_BUTTON_TEXT                 1007
+#define IDC_STATIC_BOX                  1008
+#define IDC_STATIC_LOGIN_LINE           1009
+#define IDC_BUTTON_QUEST                1009
+#define IDC_STATIC_PW_LINE              1010
+#define IDC_BUTTON_HELP                 1010
+#define IDC_STATIC_LOGIN_ID             1011
+#define IDC_BUTTON_MINI                 1011
+#define IDC_STATIC_LOGIN_PW             1012
+#define IDC_BUTTON_EXIT                 1012
+#define IDC_STATIC_DLG                  1013
+#define IDC_LIST_DESC                   1015
+#define IDC_EDIT                        1020
+#define IDC_CHAR_VIEW                   1021
+#define IDC_ITEM_VIEW                   1022
+#define IDC_ITEM_VIEW2                  1023
+#define IDC_ITEM_VIEW3                  1024
+#define IDC_COMBO_ITEMLIST1             1025
+#define IDC_COMBO_ITEMLIST2             1026
+#define IDC_COMBO_ITEMLIST3             1027
+#define IDC_EDIT_ITEMPER1               1028
+#define IDC_EDIT_ITEMPER2               1029
+#define IDC_EDIT_ITEMPER3               1030
+#define IDC_EDIT_STR                    1031
+#define IDC_EDIT_DEX                    1032
+#define IDC_EDIT_DESC                   1033
+#define IDC_BUTTON_SAVE                 1034
+#define IDC_EDIT_DESC2                  1034
+#define IDC_COMBO_CHAR_NAME             1035
+#define IDC_EDIT_VIT                    1036
+#define IDC_LIST1                       1036
+#define IDC_EDIT_HP                     1037
+#define IDC_EDIT_INT                    1038
+#define IDC_BUTTON_QUIT                 1038
+#define IDC_EDIT_MP                     1039
+#define IDC_EDIT_SPEED                  1040
+#define IDC_EDIT_SPEED2                 1041
+#define IDC_EDIT_COST                   1042
+#define IDC_EDIT_SPEED4                 1043
+#define IDC_EDIT_DR                     1044
+#define IDC_EDIT_MR                     1045
+#define IDC_EDIT_MIND                   1046
+#define IDC_EDIT_MAXD                   1047
+#define IDC_BUTTON_MODIFY               1048
+#define IDC_COMBO1                      1049
+#define IDC_EDIT_IMAGEL_FONT            1053
+#define IDC_EDIT_IMAGES_FONT            1054
+#define IDC_COMBO_IMAGEL                1055
+#define IDC_COMBO_GROUP                 1056
+#define IDC_COMBO_IMAGES                1057
+#define IDC_EDIT_MAXQUANTITY            1058
+#define IDC_COMBO_ATT                   1059
+#define IDC_EDIT_AC                     1060
+#define IDC_COMBO_KIND                  1061
+#define IDC_COMBO_UNIT                  1062
+#define IDC_EDIT_SOUND                  1063
+#define IDC_EDIT_HEALTH                 1064
+#define IDC_COMBO_ATTACK_TYPE           1065
+#define IDC_COMBO_ELEMENT01             1066
+#define IDC_EDIT_ATTUP                  1067
+#define IDC_EDIT_DEFUP                  1068
+#define IDC_EDIT_MINDAMAGE              1069
+#define IDC_EDIT_MAXDAMAGE              1070
+#define IDC_EDIT_MAXDAMAGE2             1071
+#define IDC_EDIT_REQ_LV                 1072
+#define IDC_COMBO_MAGIC                 1073
+#define IDC_EDIT_MAGIC_ATTACK           1074
+#define IDC_COMBO_ELEMENT02             1075
+#define IDC_COMBO_ELEMENT03             1076
+#define IDC_COMBO_ELEMENT04             1077
+#define IDC_COMBO_ELEMENT05             1078
+#define IDC_EDIT_ELEMENT1               1079
+#define IDC_EDIT_ELEMENT2               1080
+#define IDC_EDIT_ELEMENT3               1081
+#define IDC_EDIT_ELEMENT4               1082
+#define IDC_EDIT_ELEMENT5               1083
+#define IDC_BUTTON_SAVEITEM             1084
+#define IDC_COMBO_TOOL1                 1085
+#define IDC_EDIT_DRAWID                 1086
+#define IDC_COMBO_TOOL2                 1087
+#define IDC_COMBO_TOOL3                 1088
+#define IDC_EDIT_WORK                   1089
+#define IDC_BUTTON_DELETE               1090
+#define IDC_BUTTON_INSERT               1091
+#define IDC_EDIT_DEFENCE                1092
+#define IDC_BUTTON_INSERT_OK            1093
+#define IDC_EDIT_MODIFY                 1094
+#define IDC_EDIT_SOURCE                 1095
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        135
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1096
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

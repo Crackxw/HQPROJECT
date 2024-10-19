@@ -1,0 +1,115 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PatchTool - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/PatchTool.res" /d "_DEBUG" /d "_AFXDLL" "D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\PatchTool.rc"" 
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP360.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/PatchTool.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\GersangServerPatch.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\AttachPathDlg.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\DBJobRecord.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\DDListCtrl.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\DirDialog.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\GridCtrl.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\GridDropTarget.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\InPlaceEdit.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\ListSelectData.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\LoginDlg.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\MList.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\MyAboutDlg.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\PatchTool.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\PatchToolDlg.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\ProgressST.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\SelectInfo.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\TitleTip.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\TNDBConfig.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\TNLog.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\Grid\TNSubstanceLog.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\ServerMonitor\MyPacket.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\ServerMonitor\MyPacketQueue.cpp"
+"D:\Gersang_Server_Sourcesafe\HQProject\ServerMonitor\MySocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP360.tmp" 
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP361.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/PatchTool.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP361.tmp" 
+Creating temporary file "C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP362.tmp" with contents
+[
+ws2_32.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/PatchClient_D.pdb" /debug /machine:I386 /out:"D:\PatchClient\PatchClient_D.exe" /pdbtype:sept 
+.\Debug\GersangServerPatch.obj
+.\Debug\AttachPathDlg.obj
+.\Debug\DBJobRecord.obj
+.\Debug\DDListCtrl.obj
+.\Debug\DirDialog.obj
+.\Debug\GridCtrl.obj
+.\Debug\GridDropTarget.obj
+.\Debug\InPlaceEdit.obj
+.\Debug\ListSelectData.obj
+.\Debug\LoginDlg.obj
+.\Debug\MList.obj
+.\Debug\MyAboutDlg.obj
+.\Debug\PatchTool.obj
+.\Debug\PatchToolDlg.obj
+.\Debug\ProgressST.obj
+.\Debug\SelectInfo.obj
+.\Debug\StdAfx.obj
+.\Debug\TitleTip.obj
+.\Debug\TNDBConfig.obj
+.\Debug\TNLog.obj
+.\Debug\TNSubstanceLog.obj
+.\Debug\PatchTool.res
+.\Debug\MyPacket.obj
+.\Debug\MyPacketQueue.obj
+.\Debug\MySocket.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\NSHANG~1\LOCALS~1\Temp\RSP362.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GersangServerPatch.cpp
+AttachPathDlg.cpp
+DBJobRecord.cpp
+DDListCtrl.cpp
+DirDialog.cpp
+GridCtrl.cpp
+GridDropTarget.cpp
+InPlaceEdit.cpp
+ListSelectData.cpp
+D:\Gersang_Server_Sourcesafe\HQProject\PatchClient\ListSelectData.cpp(124) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+LoginDlg.cpp
+MList.cpp
+MyAboutDlg.cpp
+PatchTool.cpp
+PatchToolDlg.cpp
+ProgressST.cpp
+SelectInfo.cpp
+TitleTip.cpp
+TNDBConfig.cpp
+TNLog.cpp
+TNSubstanceLog.cpp
+Generating Code...
+Compiling...
+MyPacket.cpp
+MyPacketQueue.cpp
+MySocket.cpp
+Generating Code...
+Linking...
+   Creating library D:\PatchClient\PatchClient_D.lib and object D:\PatchClient\PatchClient_D.exp
+
+
+
+<h3>Results</h3>
+PatchClient_D.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

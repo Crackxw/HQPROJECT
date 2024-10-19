@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PatchTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PatchTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PatchTool Á¤º¸"
+FONT 9, "¹ÙÅÁ"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PatchTool ¹öÀü 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "È®ÀÎ",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PATCHTOOL_DIALOG DIALOGEX 0, 0, 387, 288
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PatchTool"
+FONT 9, "¹ÙÅÁ", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",IDC_SOURCEDIRECTORYPATHBTN,116,33,13,13
+    PUSHBUTTON      "Delete",IDC_DELETEPATCHBTN,155,32,53,15
+    PUSHBUTTON      "File transfer",IDC_STARTPATCHBTN,212,32,53,15
+    PUSHBUTTON      "All select",IDC_ALLPATCHCHOICEBTN,270,32,50,15
+    PUSHBUTTON      "Select cancel",IDC_CHOICEPATCHCANCELBTN,327,32,50,15
+    PUSHBUTTON      "Close",IDCANCEL,330,240,45,35
+    PUSHBUTTON      "About",IDC_ABOUT,276,240,45,35
+    PUSHBUTTON      "Connect",IDC_MASTER_SERVER_CONNECT,217,240,45,35
+    CONTROL         "",IDC_COPYFILEPROGRESS,"msctls_progress32",0x0,221,220,
+                    149,13
+    CONTROL         "",IDC_SOURCEFILELIST,"SysListView32",LVS_LIST | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,53,112,145
+    PUSHBUTTON      ">>",IDC_ALL_FILE_ADD_BTN,130,102,19,14
+    PUSHBUTTON      "<<",IDC_ALL_FILE_REMOVE_BTN,130,122,19,14
+    CONTROL         "",IDC_TARGETFILELIST,"SysListView32",LVS_LIST | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,155,53,111,145
+    LISTBOX         IDC_SERVERSELECTLIST,270,53,106,144,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Source directory",IDC_STATIC,16,20,59,8
+    EDITTEXT        IDC_SOURCEDIRECTORYPATHEDIT,15,33,97,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC,0,0,387,281,0,WS_EX_DLGMODALFRAME
+    CONTROL         "New",IDC_NEWVISIONRADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,278,16,34,8
+    CONTROL         "Attach",IDC_ATTACHRADIO,"Button",BS_AUTORADIOBUTTON,331,
+                    16,39,8
+    GROUPBOX        "",IDC_STATIC,271,5,106,24
+    LISTBOX         IDC_MSGDISPLAYLIST,14,203,193,69,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File Name :",IDC_FILETRANSFRERNAMESTATIC,220,205,149,8
+    GROUPBOX        "",IDC_STATIC,217,196,159,42
+END
+
+IDD_ABOUTDDLG DIALOG DISCARDABLE  0, 0, 94, 56
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "¹ÙÅÁ"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,34,57,14
+    LTEXT           "Gersang Team.",IDC_STATIC,9,5,76,8
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,9,18,62,8
+END
+
+IDD_PATH DIALOG DISCARDABLE  0, 0, 187, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Path"
+FONT 9, "¹ÙÅÁ"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,11
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,11
+    EDITTEXT        IDC_ATTACHVERSIONEDIT,39,14,77,12,ES_AUTOHSCROLL
+    LTEXT           "Path : ",IDC_STATIC,14,15,21,9
+END
+
+IDD_IPDIALOG DIALOGEX 0, 0, 185, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 9, "¹ÙÅÁ", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_IDEDIT,54,7,124,12,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PWEDIT,54,24,124,12,ES_PASSWORD | ES_AUTOHSCROLL,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "LOGIN",IDOK,70,45,50,11
+    PUSHBUTTON      "Close",IDCANCEL,128,44,50,12
+    LTEXT           "ID :",IDC_STATIC,8,8,40,11,0,WS_EX_STATICEDGE
+    LTEXT           "Password :",IDC_STATIC,8,25,40,11,0,WS_EX_STATICEDGE
+END
+
+IDD_DESTINATIONPATHDIALOG DIALOG DISCARDABLE  0, 0, 187, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PATH"
+FONT 9, "¹ÙÅÁ"
+BEGIN
+    EDITTEXT        IDC_DESTINATIONPATHEDIT,7,60,108,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_DESTINATIONPATHLIST,7,7,108,48,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Enter the folder to receive file.\nIf you leave the box empty  sended file will be saved in folder where monitoring server  is installed.",
+                    IDC_STATIC,7,82,172,37
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PatchTool MFC ÀÀ¿ë ÇÁ·Î±×·¥\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PatchTool\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PatchTool.EXE\0"
+            VALUE "ProductName", "PatchTool ÀÀ¿ë ÇÁ·Î±×·¥\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PATCHTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        VERTGUIDE, 130
+        VERTGUIDE, 149
+        VERTGUIDE, 155
+        VERTGUIDE, 266
+        VERTGUIDE, 270
+        VERTGUIDE, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+        HORZGUIDE, 28
+        HORZGUIDE, 53
+        HORZGUIDE, 198
+        HORZGUIDE, 218
+        HORZGUIDE, 225
+    END
+
+    IDD_ABOUTDDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_IPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DESTINATIONPATHDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "PatchTool Á¤º¸(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\PatchTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

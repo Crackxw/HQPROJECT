@@ -1,0 +1,94 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "GSLCore"=..\..\GSLib\VC6\GSLCore\GSLCore.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/GSLib/VC6/GSLCore", NVIAAAAA
+    ..\..\gslib\vc6\gslcore
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GSLDirectX"=..\..\GSLib\VC6\GSLDirectX\GSLDirectX.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/GSLib/VC6/GSLDirectX", BWIAAAAA
+    ..\..\gslib\vc6\gsldirectx
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Hqlib"=..\Hqlib\Hqlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/HQProject/Hqlib", IDFAAAAA
+    ..\hqlib
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "¿”¡¯∑œ2"=.\Gersang.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/HQProject/Gersang", EAAAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Hqlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GSLCore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GSLDirectX
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/HQProject/Gersang", EAAAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,5 @@
+#ifndef	IMJIN2_YMEMORY_HEADER
+#define IMJIN2_YMEMORY_HEADER
+
+VOID	AllMemoryFree();
+#endif
